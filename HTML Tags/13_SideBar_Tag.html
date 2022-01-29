@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Bar</title>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            
+        }
+        body,html
+        {
+            height: 100%;
+        }
+        header
+        {
+            background: white url("images/image5.jpeg")scroll no-repeat center;
+            background-size: cover;
+            margin: 0;
+            padding: 10px;
+        }
+        header h1
+        {
+            color: white;
+            text-shadow: 3px 3px 3px black;
+        }
+
+        aside a
+        {
+            text-decoration: none;
+            display: block;
+            color: white;
+            padding: 15px 25px;
+            font-size: 19px;
+
+        }
+        aside h2
+        {
+            margin: 0;
+            text-decoration: underline;
+            color: white;
+            padding: 15px 0 18px 0;
+        }
+        aside
+        {
+            margin:0;
+            float: left;
+            background: linear-gradient(45deg,blueviolet,deeppink);
+            width: 100px;
+            text-align: center;
+            box-shadow: 0 5px 10px black;
+            height: 100vh;
+            padding: 10px;
+            
+        }
+        aside a:hover
+        {
+            background: linear-gradient(45deg,deeppink,coral);
+            border-radius: 50px;
+            box-shadow: 0 0 5px black;
+        }
+        aside img
+        {
+            margin: 0;
+            width: 80px;
+            border-style: solid;
+            border-color: coral;
+            border-radius: 50%;
+            box-shadow: 0 0 10px black;
+            margin-bottom: 15px;
+        }
+        section
+        {
+            margin-top: 0;
+            overflow: hidden;
+            padding:30px
+        }
+        section p
+        {
+            padding: 15px;
+            font-size: 18px;
+        }
+        section h2
+        {
+            padding:10px 15px;
+            color: blueviolet;
+            text-decoration: underline;
+            text-align: center;
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Child Company</h1>
+    </header>
+    <!--side bar-->
+    <aside>
+        <img src="./images/user.png"alt="oops no image">
+        <a href="">HTML</a>
+        <a href="">CSS</a>
+        <a href="">JS</a>
+        <a href="">JAVA</a>
+        <a href="">PHP</a>
+        <a href="">MY SQL</a>
+        <a href="">PYTHON</a>
+    </aside>
+    <!--main content-->
+    <!--<section>
+            <article>
+            <h2>Technical Training</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab a culpa illo ipsam! Accusamus ad a eius magnam animi veritatis suscipit, esse non tempora cum rerum sequi quos quia ut eaque corporis libero repudiandae doloribus tempore voluptatibus perspiciatis quo ea?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet blanditiis distinctio, sint architecto atque tenetur incidunt recusandae quod itaque totam! Dolorem quo officia maxime quod dolores alias, cupiditate consectetur. Magni, architecto. Error minima maiores accusamus beatae soluta consequatur, incidunt doloribus commodi dolorum, tempora officia, iste perferendis esse dicta nisi sint!</p>
+        </article>
+        <article>
+            <h2>Marketting Training</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab a culpa illo ipsam! Accusamus ad a eius magnam animi veritatis suscipit, esse non tempora cum rerum sequi quos quia ut eaque corporis libero repudiandae doloribus tempore voluptatibus perspiciatis quo ea?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet blanditiis distinctio, sint architecto atque tenetur incidunt recusandae quod itaque totam! Dolorem quo officia maxime quod dolores alias, cupiditate consectetur. Magni, architecto. Error minima maiores accusamus beatae soluta consequatur, incidunt doloribus commodi dolorum, tempora officia, iste perferendis esse dicta nisi sint!</p>
+        </article>
+        <article>
+            <h2>Technical Training</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab a culpa illo ipsam! Accusamus ad a eius magnam animi veritatis suscipit, esse non tempora cum rerum sequi quos quia ut eaque corporis libero repudiandae doloribus tempore voluptatibus perspiciatis quo ea?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet blanditiis distinctio, sint architecto atque tenetur incidunt recusandae quod itaque totam! Dolorem quo officia maxime quod dolores alias, cupiditate consectetur. Magni, architecto. Error minima maiores accusamus beatae soluta consequatur, incidunt doloribus commodi dolorum, tempora officia, iste perferendis esse dicta nisi sint!</p>
+        </article>
+        <article>
+            <h2>HR Training</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab a culpa illo ipsam! Accusamus ad a eius magnam animi veritatis suscipit, esse non tempora cum rerum sequi quos quia ut eaque corporis libero repudiandae doloribus tempore voluptatibus perspiciatis quo ea?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet blanditiis distinctio, sint architecto atque tenetur incidunt recusandae quod itaque totam! Dolorem quo officia maxime quod dolores alias, cupiditate consectetur. Magni, architecto. Error minima maiores accusamus beatae soluta consequatur, incidunt doloribus commodi dolorum, tempora officia, iste perferendis esse dicta nisi sint!</p>
+        </article>
+        <article>
+            <h2>Admin Training</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab a culpa illo ipsam! Accusamus ad a eius magnam animi veritatis suscipit, esse non tempora cum rerum sequi quos quia ut eaque corporis libero repudiandae doloribus tempore voluptatibus perspiciatis quo ea?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet blanditiis distinctio, sint architecto atque tenetur incidunt recusandae quod itaque totam! Dolorem quo officia maxime quod dolores alias, cupiditate consectetur. Magni, architecto. Error minima maiores accusamus beatae soluta consequatur, incidunt doloribus commodi dolorum, tempora officia, iste perferendis esse dicta nisi sint!</p>
+            </article>
+        <article>
+            <h2>InternShip</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab a culpa illo ipsam! Accusamus ad a eius magnam animi veritatis suscipit, esse non tempora cum rerum sequi quos quia ut eaque corporis libero repudiandae doloribus tempore voluptatibus perspiciatis quo ea?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet blanditiis distinctio, sint architecto atque tenetur incidunt recusandae quod itaque totam! Dolorem quo officia maxime quod dolores alias, cupiditate consectetur. Magni, architecto. Error minima maiores accusamus beatae soluta consequatur, incidunt doloribus commodi dolorum, tempora officia, iste perferendis esse dicta nisi sint!
+            </p>
+        </article>
+    </section>-->
+    </body>
+</html>

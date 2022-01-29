@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADDIOTION USING JS</title>
+    <script>
+        function addIt()
+        {
+            let op1 = document.addform.operand1.value;
+            let op2 = document.addform.operand2.value;
+
+            console.log("Operand 1 is :",op1);
+            console.log("Operand 2 is :",op2);
+
+            let result = parseInt(op1) + parseInt(op2);
+
+            console.log("Result of sum is :",result);
+
+            document.getElementById('result').innerHTML=result;
+        }
+    </script>
+</head>
+<body>
+    <h1>ADDING 2 NUMBERS</h1>
+    <h4>Enter the values for op1 and op2:</h4>
+    <form name="addform" action="">
+        OPTION 1 :
+        <input type="text" name="operand1" size="5">
+        <br><br>
+        OPTION 2 :
+        <input type="text" name="operand2" size="5">
+        <br><br>
+        <input type="button" value="submit" onclick="addIt()" id="">
+        <br><br>
+        <h2>Sum is:</h2>
+        <h3 id="result"></h3>
+    </form>
+</body>
+</html>

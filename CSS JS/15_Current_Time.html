@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Time</title>
+    <script>
+        function printTime()
+        {
+            document.getElementById('time').innerHTML=giveTime()
+        }
+        function giveTime()
+        {
+            let time =new Date()
+            let hrs,min,sec;
+
+            hrs = time.getHours().toString();
+            hrs = hrs.length > 1 ? hrs : '0'+hrs;
+
+            min = time.getMinutes().toString();
+            min = min.length>1 ? min : '0'+min;
+
+            sec = time.getSeconds().toString();
+            sec = sec.length>1 ? sec : '0'+sec;
+
+            return hrs+":"+min+":"+sec;
+        }
+    </script>
+</head>
+<body>
+    <h1>Current Time is hh:mm:ss</h1>
+    <h3 id="time">hh:mm:ss</h3>
+    <form action="">
+        <input type="button" value="GET TIME" onclick="printTime()">
+    </form>
+</body>
+</html>

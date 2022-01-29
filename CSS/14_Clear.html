@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear</title>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            color: darkslategray;
+        }
+        h1
+        {
+            text-decoration: underline;
+            clear: both;
+            text-align: center;
+        }
+        div
+        {
+            margin: 20px;
+            width: 20%;
+            padding: 10px;
+            border: 3px solid black;
+        }
+        .left
+        {
+            float: left;
+        }
+        .right
+        {
+            float: right;
+        }
+        .bottom
+        {
+            clear: both;
+            width: 51.5%;
+            margin: auto;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Using without Clear Properties</h1>
+    <div style="float: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quis ut consectetur. Accusamus obcaecati a totam ullam ipsum, quos saepe sunt, iusto eos sit deserunt placeat facilis eligendi error ea, cupiditate natus facere? Nam, rerum blanditiis sunt, velit at ab eum, adipisci labore excepturi nulla reprehenderit! Harum est in quasi?</div>
+    <div style="float: right;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora saepe dicta molestiae iusto harum ipsam eaque ut laudantium? Fugit ipsum autem repellat blanditiis esse, sit numquam vel cum iure illo cumque tempore similique recusandae eaque excepturi delectus, quod molestiae, natus ab aliquam repellendus fuga? Ad dolorem in earum laborum ipsa.</div>
+    <br>
+    <div style="width: 51.5%;margin: auto;margin-top: 2px;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, eligendi eius unde dignissimos explicabo enim ducimus earum numquam odit officiis?
+    </div>
+    
+    <h1>Using With Clear Properties</h1>
+    <div class="left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem consequuntur ex, eligendi maxime numquam tempora cumque, sunt ullam, ipsa dolore reiciendis deserunt id. Neque fugiat blanditiis, dicta tempora quas deleniti? Blanditiis quasi ipsa consectetur, consequuntur vel numquam ullam? Deleniti aspernatur illum sit, tempore natus a temporibus dolores placeat! Praesentium, quos.</div>
+
+    <div class="right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, dolor, qui esse doloribus adipisci impedit dolorem, aliquid velit praesentium non itaque animi totam. Error, porro necessitatibus amet eos aperiam culpa minima totam nisi dignissimos eligendi nobis ex laborum cupiditate impedit non temporibus aliquam a maiores veniam. Voluptate ab modi pariatur?</div>
+
+    <div class="bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit aliquid dolores dignissimos unde vel id cum exercitationem at excepturi ex.</div>
+</body>
+</html>

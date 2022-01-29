@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator using Buttons</title>
+    <script>
+        function calcIt(sign)
+        {
+            let op1 = document.calcform.op1.value;
+            let op2 = document.calcform.op2.value;
+            if(op1=="" || op2=="")
+            {
+                alert("Enter the values")
+            }
+            op1=parseInt(op1);
+            op2=parseInt(op2);
+            console.log("Number of Operations are :",document.calcform.calc.length);
+            console.log("Operation is :",sign);
+            console.log("Operator 1 is :",op1);
+            console.log("Operator 2 is :",op2);
+
+            let result
+            switch(sign)
+            {
+                case '+':
+                    result=op1+op2;
+                    break;
+                case '-':
+                    result=op1-op2;
+                    break;
+                case '*':
+                    result=op1*op2;
+                    break;
+                case '/':
+                    result=op1/op2;
+                    break;
+                case '%':
+                    result=op1%op2;
+                    break;
+            }
+            console.log("Result is :",result);
+
+            document.getElementById("result").innerHTML=result;
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculator using Buttons - 2 Numbers Only</h1>
+    <form name="calcform">
+        <h3>Enter the operand values:</h3>
+        OPERAND 1 :
+        <input type="text" name="op1" size="5">
+        <br><br>
+        OPERAND 2 :
+        <input type="text" name="op2" size="5">
+        <br>
+        <h4>Choose the operation you want to perform:</h4>
+        OPERATORS :
+        <input type="button" name="calc" value="+" onclick="calcIt('+')">
+
+        <input type="button" name="calc" value="-" onclick="calcIt('-')">
+
+        <input type="button" name="calc" value="*" onclick="calcIt('*')">
+
+        <input type="button" name="calc" value="/" onclick="calcIt('/')">
+
+        <input type="button" name="calc" value="%" onclick="calcIt('%')">
+        <br>
+        <h3>Result is:</h3>
+        <h3 id="result"></h3>
+    </form>
+</body>
+</html>

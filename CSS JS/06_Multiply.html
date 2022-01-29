@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muliplication using js</title>
+    <script>
+        function showProduct()
+        {
+            let op1 = document.prodform.operand1.value;
+            let op2 = document.prodform.operand2.value;
+
+            op1=parseInt(op1);
+            op2=parseInt(op2);
+
+            console.log("Operand 1 is:",op1);
+            console.log("Operand 2 is:",op2);
+
+            let result = op1*op2;
+
+            console.log("Product is :",result);
+
+            document.getElementById("product").innerHTML=result;
+        }
+    </script>
+</head>
+<body>
+    <h1>PRODUCT OF 2 NUMBERS</h1>
+
+    <form name="prodform">
+        <h3>Enter the values of two operands:</h3>
+        OPERAND 1 :
+        <input type="text" name="operand1" size="5">
+        <br><br>
+        OPERAND 2 :
+        <input type="text" name="operand2" size="5">
+        <br><br>
+        <input type="button" value="SUBMIT" onclick="showProduct()">
+        <br><br>
+        <h2>Product is:</h2>
+        <h3 id="product"></h3>
+    </form>
+</body>
+</html>

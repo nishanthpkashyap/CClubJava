@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Space</title>
+    <style>
+        body
+        {
+            color: darkslategray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div
+        {
+            border: 3px solid black;
+            margin-bottom: 30px;
+            padding: 5px 10px;
+        }
+        .normal p
+        {
+            white-space: normal;
+        }
+        .pre p
+        {
+            white-space: pre;
+        }
+        .pre h3
+        {
+            white-space: pre;
+        } 
+        .nowrap p
+        {
+            white-space: nowrap;
+        }
+        .preline p
+        {
+            white-space: pre-line;
+        }
+        .preline h3
+        {
+            white-space: pre-line;
+        }
+        .prewrap p
+        {
+            white-space: pre-wrap;
+        }
+        .prewrap h3
+        {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <div class="normal">
+        <h3>white-space:normal</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum eligendi magni minus delectus. Tempore nemo eveniet, adipisci cumque quisquam aspernatur, officiis officia quibusdam quasi iure sapiente, assumenda aliquid! Quos accusantium laboriosam porro quis exercitationem autem odio quo temporibus nesciunt quia?</p>
+    </div>
+    <div class="nowrap">
+        <h3>white-space:nowrap (all words in 1 sentence)</h3>
+        <p>Lorem ipsum dolor,         (here white space is ignored by html)          sit amet consectetur adipisicing elit.Dolorum eligendi magni minus delectus. Tempore nemo eveniet, adipisci cumque quisquam aspernatur, officiis officia quibusdam quasi iure sapiente, assumenda aliquid! Quos accusantium laboriosam porro quis exercitationem autem odio quo temporibus nesciunt quia?</p>
+    </div>
+    <div class="pre">
+        <h3>white-space:pre (supports multiple white-spaces , new line functionality and previoud nowrap value : like this very sentence)</h3>
+        <p>Lorem ipsum dolor,           (here white space is not ignored by html)                          
+            sit amet consectetur adipisicing elit.
+            Dolorum eligendi magni minus delectus. 
+            Tempore nemo eveniet, adipisci cumque quisquam aspernatur, officiis officia quibusdam quasi iure sapiente, assumenda aliquid! 
+            Quos accusantium laboriosam porro quis exercitationem autem odio quo temporibus nesciunt quia?</p>
+    </div>
+    <div class="preline">
+        <h3>white-space:pre-line (supports new line but not multiple white spaces)</h3>
+        <p>Lorem ipsum dolor,sit amet consectetur adipisicing elit.
+            Dolorum eligendi magni minus delectus. 
+            Tempore nemo eveniet, adipisci cumque quisquam aspernatur, officiis officia quibusdam quasi iure sapiente,assumenda aliquid!
+            Quos accusantium laboriosam porro quis exercitationem autem odio quo temporibus nesciunt quia?</p>
+    </div>
+    <div class="prewrap">
+        <h3>white-space:pre-wrap (supports multiple white spaces and new line but not nowrap functionality)</h3>
+        <p>Lorem ipsum dolor,                                                                                           sit amet consectetur adipisicing elit. 
+            Dolorum eligendi magni minus delectus. 
+            Tempore nemo eveniet, adipisci cumque quisquam aspernatur, officiis officia quibusdam quasi iure sapiente, 
+            assumenda aliquid! Quos accusantium laboriosam porro quis exercitationem autem odio quo temporibus nesciunt quia?</p>
+    </div>
+</body>
+</html>

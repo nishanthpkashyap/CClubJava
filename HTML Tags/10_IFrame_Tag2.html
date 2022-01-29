@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Maps</title>
+    <style>
+        h1
+        {
+            text-decoration: underline;
+            text-decoration-color: red;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        iframe
+        {
+            box-shadow: 0 5px 10px black;
+        }
+    </style>
+    <link rel="icon" href="data:image/png;base64,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">
+</head>
+<body>
+    <h1>Google Maps</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15552.736684829762!2d77.5277469!3d12.960064000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3e75d1325e99%3A0x42b3cbc9174cc9cd!2sAttiguppe!5e0!3m2!1sen!2sin!4v1630568859242!5m2!1sen!2sin" width="500px" height="390px" style="border:1;" allowfullscreen="" loading="lazy"></iframe>
+
+    <h1>360 Degree Image</h1>
+    <iframe src="https://momento360.com/e/u/d6cfcbb92b844cbb990bcd1c02cce4b6?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=68.82&size=medium" frameborder="1" width="550px" height="390px"></iframe>
+</body>
+</html>

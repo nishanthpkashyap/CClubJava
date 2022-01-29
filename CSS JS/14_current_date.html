@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Date</title>
+    <script>
+        function printDate()
+        {
+            document.getElementById("date").innerHTML=giveDate();
+        }
+        function giveDate()
+        {
+            let date = new Date();
+            let month,day,year;
+
+            day = date.getDate().toString();
+            day = day.length>1 ? day : '0'+day;
+
+            month =(1+date.getMonth()).toString();
+            month = month.length>1 ? month : '0'+month;    
+            
+            year=date.getFullYear();
+            return day+'-'+month+'-'+year;
+        }
+    </script>
+</head>
+<body>
+    <h1>Current Date in dd-MM-yyyy format :</h1>
+    <h3 id="date">dd-MM-yyyy</h3>
+    <form>
+        <input type="button" value="GET DATE" onclick="printDate()">
+    </form>
+</body>
+</html>

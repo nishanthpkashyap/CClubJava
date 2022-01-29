@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Overflow</title>
+    <style>
+        body
+        {
+            color: darkslategray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div
+        {
+            border: 3px solid black;
+            width: 200px;
+            white-space: nowrap;
+        }
+        .clip
+        {
+            text-overflow: clip;
+            overflow: hidden;
+        }
+        .ellipses
+        {
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .string
+        {
+            text-overflow: "[..]";
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Text OverFlow</h1>
+    <div class="clip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsam excepturi error cum doloribus exercitationem nostrum quia expedita, pariatur quis!</div>
+    <br>
+    <div class="ellipses">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsam excepturi error cum doloribus exercitationem nostrum quia expedita, pariatur quis!</div>
+    <br>
+    <div class="string">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ipsam excepturi error cum doloribus exercitationem nostrum quia expedita, pariatur quis!</div> <!--text-overflow:string supported by firefox only-->
+</body>
+</html>

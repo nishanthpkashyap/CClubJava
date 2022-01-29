@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Mode</title>
+    <style>
+        body
+        {
+            color:darkslategray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p
+        {
+            width: 400px;
+            border: 3px solid black;
+            padding: 10px;
+            margin-bottom: 30px;
+        }
+        h2
+        {
+            text-decoration-line: underline;
+        }
+        .horizontal-tb
+        {
+            writing-mode: horizontal-tb;
+        }
+        .vertical-lr
+        {
+            writing-mode: vertical-lr;
+        }
+        .vertical-rl
+        {
+            writing-mode: vertical-rl;
+        }
+    </style>
+</head>
+<body>
+    <h2>Writing-mode: horizontal-tb</h2>
+    <p class="horizontal-tb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, eum dolore. Voluptatibus nobis eum in quod fugiat expedita eos assumenda. Quis quam expedita placeat impedit officia ipsa tenetur, incidunt veritatis beatae animi ipsam temporibus illum quas consequuntur iusto. Incidunt doloribus commodi placeat cumque aperiam alias est laudantium fugiat, sequi deleniti!</p>
+
+    <h2>Writing-mode: vertical-lr</h2>
+    <p class="vertical-lr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, eum dolore. Voluptatibus nobis eum in quod fugiat expedita eos assumenda. Quis quam expedita placeat impedit officia ipsa tenetur, incidunt veritatis beatae animi ipsam temporibus illum quas consequuntur iusto. Incidunt doloribus commodi placeat cumque aperiam alias est laudantium fugiat, sequi deleniti!</p>
+
+    <h2>Writing-mode: vertical-rl</h2>
+    <p class="vertical-rl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, eum dolore. Voluptatibus nobis eum in quod fugiat expedita eos assumenda. Quis quam expedita placeat impedit officia ipsa tenetur, incidunt veritatis beatae animi ipsam temporibus illum quas consequuntur iusto. Incidunt doloribus commodi placeat cumque aperiam alias est laudantium fugiat, sequi deleniti!</p>
+</body>
+</html>

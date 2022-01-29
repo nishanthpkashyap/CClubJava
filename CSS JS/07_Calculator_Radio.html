@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcultor Radio Buttons</title>
+    <script>
+        function calcIt()
+        {
+            let sign=document.calcform.calc.value;
+            let op1 =document.calcform.op1.value;
+            let op2 =document.calcform.op2.value;
+
+            if(sign == "")
+            {
+                alert("Choose an Operation")
+            }
+            else if(op1 == "" || op2 == "")
+            {
+                alert("Enter the values")
+            }
+
+            op1=parseInt(op1);
+            op2=parseInt(op2);
+            
+            console.log("Number of operations are :",document.calcform.calc.length)
+            console.log("Operand 1 is :",op1);
+            console.log("Operand 2 is :",op2);
+            console.log("Operation is:",sign);
+            
+            let result
+            switch(sign)
+            {
+                case "+":
+                    {
+                        result=op1+op2
+                        break;
+                    }
+                case "-":
+                    {
+                        result=op1-op2
+                        break;
+                    }
+                case "*":
+                    {
+                        result=op1*op2
+                        break;
+                    }
+                case "/":
+                    {
+                        result=op1/op2
+                        break;
+                    }
+                case "%":
+                    {
+                        result=op1%op2
+                        break;
+                    }
+            }
+
+            console.log("Result is :",result);
+            document.getElementById("result").innerHTML=result;
+        }
+    </script>
+</head>
+<body>
+    <h1>Calcultor using Radio Buttons- 2 Numbers Only</h1>
+    <form name="calcform">
+        <h3>Enter the values of 2 operands:</h3>
+        OPERAND 1 :
+        <input type="text" name="op1" size="5">
+        <br><br>
+        OPERAND 2 :
+        <input type="text" name="op2" size="5">
+        <h3>Select the operation you wanna perform:</h3>
+
+        <input type="radio"name="calc"value="+">+
+        
+        <input type="radio"name="calc"value="-">-
+
+        <input type="radio"name="calc"value="*">*
+
+        <input type="radio"name="calc"value="/">/
+
+        <input type="radio"name="calc"value="%">%
+        <br><br>
+        <input type="button" value="SUBMIT" onclick="calcIt()"><br>
+        <h3>RESULT IS :</h3>
+        <h3 id="result"></h3>
+    </form>
+</body>
+</html>

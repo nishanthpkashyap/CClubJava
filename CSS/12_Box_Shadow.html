@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Shadow</title>
+    <style>
+        body
+        {
+            color: darkslategray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div
+        {
+            border: 3px solid black;            padding: 10px;
+            margin: auto;
+            width: 70%;
+            margin-top: 50px;
+            text-align: center;
+        }
+        .xy_only
+        {
+            box-shadow: 6px 6px 0px black;
+        }
+        .xy_blur
+        {
+            box-shadow: 6px 6px 6px 0px black
+        }
+        .xy_blur_spread
+        {
+            box-shadow: 6px 6px 6px 6px black
+        }
+        .with-minus
+        {
+            box-shadow:-6px -6px 5px 4px black ;
+        }
+        .mutli-shadows
+        {
+            box-shadow: 6px 6px 3px red,12px 12px 3px blue,18px 18px 3px green;
+        }
+        .inside
+        {
+            box-shadow:6px 6px 3px yellowgreen 
+            inset;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="inside">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quo debitis quas quisquam ad, nostrum quasi provident ducimus illo sed harum, animi maiores, repudiandae similique reprehenderit accusamus ipsa fuga cumque assumenda doloribus? Beatae alias commodi dolore odio ut quam, unde recusandae soluta id sunt impedit, autem eveniet dicta totam vero?
+    </div>
+
+    <div class="xy_only">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quo debitis quas quisquam ad, nostrum quasi provident ducimus illo sed harum, animi maiores, repudiandae similique reprehenderit accusamus ipsa fuga cumque assumenda doloribus? Beatae alias commodi dolore odio ut quam, unde recusandae soluta id sunt impedit, autem eveniet dicta totam vero?
+    </div>
+
+    <div class="xy_blur">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quo debitis quas quisquam ad, nostrum quasi provident ducimus illo sed harum, animi maiores, repudiandae similique reprehenderit accusamus ipsa fuga cumque assumenda doloribus? Beatae alias commodi dolore odio ut quam, unde recusandae soluta id sunt impedit, autem eveniet dicta totam vero?
+    </div>
+
+    <div class="xy_blur_spread">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quo debitis quas quisquam ad, nostrum quasi provident ducimus illo sed harum, animi maiores, repudiandae similique reprehenderit accusamus ipsa fuga cumque assumenda doloribus? Beatae alias commodi dolore odio ut quam, unde recusandae soluta id sunt impedit, autem eveniet dicta totam vero?
+    </div>
+
+    <div class="with-minus">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quo debitis quas quisquam ad, nostrum quasi provident ducimus illo sed harum, animi maiores, repudiandae similique reprehenderit accusamus ipsa fuga cumque assumenda doloribus? Beatae alias commodi dolore odio ut quam, unde recusandae soluta id sunt impedit, autem eveniet dicta totam vero?
+    </div>
+
+    <div class="mutli-shadows">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos quo debitis quas quisquam ad, nostrum quasi provident ducimus illo sed harum, animi maiores, repudiandae similique reprehenderit accusamus ipsa fuga cumque assumenda doloribus? Beatae alias commodi dolore odio ut quam, unde recusandae soluta id sunt impedit, autem eveniet dicta totam vero?
+    </div>
+</body>
+</html>
